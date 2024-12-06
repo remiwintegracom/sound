@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #e9ecef;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #000;
+            padding: 15px;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .project {
+            display: inline-block;
+            width: 300px;
+            height: 200px;
+            background-color: #eaeaea;
+            margin: 15px;
+            padding: 10px;
+            text-align: center;
+            vertical-align: top;
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+            transition: 0.3s;
+        }
+
+        .footer {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>🌟 Mon Portfolio 🌟</h1>
+    </header>
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">À Propos</a>
+        <a href="#projects">Projets</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <!-- Section Accueil -->
+    <div class="container" id="about">
+        <h2 class="section-title">À Propos</h2>
+        <p>Bonjour ! Je suis <strong>Jean Dupont</strong>, un développeur passionné spécialisé en HTML, CSS et
+            JavaScript.
+            Je crée des projets dynamiques et élégants.</p>
+        <p>Mon objectif est de transformer des idées en réalité et des concepts en expériences interactives.</p>
+    </div>
+    <!-- Section Projets -->
+    <div class="container" id="projects">
+        <h2 class="section-title">Mes Projets</h2>
+        <div class="project">
+            <h3>Projet 1</h3>
+            <p>Une application simple de gestion des tâches.</p>
+        </div>
+        <div class="project">
+            <h3>Projet 2</h3>
+            <p>Un portfolio interactif développé en HTML/CSS/JS.</p>
+        </div>
+        <div class="project">
+            <h3>Projet 3</h3>
+            <p>Un site web responsive pour les petites entreprises.</p>
+        </div>
+    </div>
+    <!-- Section Contact -->
+    <div class="container" id="contact">
+        <h2 class="section-title">Contact</h2>
+        <form action="mailto:jeandupont@example.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Votre email" required>
+            <textarea name="message" rows="5" placeholder="Votre message"></textarea>
+            <input type="submit" value="Envoyer">
+        </form>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+        <p>© 2023 Jean Dupont - Développeur Full Stack</p>
+    </div>
+</body>
+</html>
